@@ -1,3 +1,10 @@
+*****UPDATE******
+I had to reupload the whole project on github. 
+Mine part was frontend, rest of the team worked on backend.
+
+
+
+
 # REST API
 
 The REST API for mailing service is listed below
