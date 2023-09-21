@@ -2,7 +2,35 @@
 I had to reupload the whole project on github. 
 Mine part was frontend, rest of the team worked on backend.
 
+# **DESCRIPTION**
 
+
+# Login/Register page
+This page contains form for login/register.
+* Register- Every email needs to be formatted like example@email.com
+* Password- At least 6 characters
+  
+# Dashboard
+This page contains tabs: 
+*  Inbox/received mails
+*  Sent mails
+*  Favorites
+*  Drafts
+*  Compose
+## Inbox
+Simple page that will show you every mail that you've received. Ability to mark mail as favorite.
+## Sent mails
+In this page you can see every mail that you've sent. Every mail is represented as tab wich containts:
+* Receiver
+* Sender
+* Date of mail
+* Subject
+# Favorites
+Every mail that you've marked as favorite.
+# Drafts
+Holds every mail that hasn't been sent. Any time you click save as draft button it will save it. You can also discard any draft.
+# Compose
+Opens as pop up window like gmail does. You can enter as many receivers you like. It prevents you from sending mail if format of email address isn't right(example@email.com).
 
 
 # REST API
