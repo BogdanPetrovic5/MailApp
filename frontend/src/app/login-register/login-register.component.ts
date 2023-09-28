@@ -26,15 +26,22 @@ export class LoginRegisterComponent implements OnInit {
   oldPasswordChanged = false
   //dodata logika za prikupljanje stvari iz local storage nakon refresha
     //pomocni objekat za prikupljanje inf sa local storage
+
+    // Add logic for retrieving items from local storage after a refresh
+// Helper object for collecting information from local storage
   dataTemp = {
     username:"",
     firstName:"",
     lastName:"",
     dob:""
   }
-  //'Objekat' koji kupi informaciju sa lokal storage, u njega se smesta key 'user' u koliko je prazan tj nema 'user' key u local se ubacuje 
+  // Objekat koji kupi informaciju sa lokal storage, u njega se smesta key 'user' u koliko je prazan tj nema 'user' key u local se ubacuje 
   //prazan string primer iznad. U koliko nije prazan(imamo ulogovanog korisnika) 'objekat' 'data' koji se koristio za respons od beka, on dobija vrednosti
   //JASON-a sa locala(JASON.parse(dataUsers))
+
+  // An object that collects information from local storage. If the 'user' key is empty or missing in local storage,
+  // it stores an empty string, as shown in the example above. If it's not empty (indicating a logged-in user),
+  // the 'data' object used for backend responses receives values from the JSON stored in local storage (JSON.parse(dataUsers)).
   dataUsers:any
   ////
   constructor(private auth: AuthService, private router: Router) {
@@ -139,7 +146,8 @@ export class LoginRegisterComponent implements OnInit {
   // LOGIN REQUEST
   login()
   {
-    ///Ukucavamo primer@email.com vadimo username iz same adrese i saljemo beku
+    ///Ukucavamo primer@email.com, vadimo username iz same adrese i saljemo beku
+    // We enter the example@email.com, extract the username from the email address, and send it to the backend.
     if(this.emailLogin.search("@email.com") != -1){
       let extractUsername = this.emailLogin.split("@")
       this.userNameToSend = extractUsername[0]
