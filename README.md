@@ -1,6 +1,7 @@
 *****UPDATE*****
 I had to reupload the whole project on github. 
 Mine part was frontend, rest of the team worked on backend.
+Video: https://www.youtube.com/watch?v=DOsvkLagTQc
 
 # **DESCRIPTION**
 
